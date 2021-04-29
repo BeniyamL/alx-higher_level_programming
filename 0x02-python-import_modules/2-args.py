@@ -10,4 +10,4 @@ if __name__ == "__main__":
         print("{0:d} arguments:".format(nmbr - 1))
 
     for i in range(len(sys.argv) - 1):
-        print("{0:d} : {1:s}".format(i + 1, sys.argv[i + 1]))
+        print("{0:d}: {1:s}".format(i + 1, sys.argv[i + 1]))
