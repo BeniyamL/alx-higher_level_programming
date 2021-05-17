@@ -18,5 +18,5 @@ def safe_print_integer_err(value):
         sys.stderr.write("Exception: " + str(Te) + "\n")
         return False
     except ValueError as Ve:
-        sys.stderr.write("Exception: " + str(Ve) + "\n") 
+        sys.stderr.write("Exception: " + str(Ve) + "\n")
         return False
