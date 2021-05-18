@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Node class definition """
+
+
 class Node:
     """ a node class to define atributes and methods of a node """
 
@@ -62,6 +65,8 @@ class Node:
         if type(value) is not Node and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
+
+""" singly linked list defition """
 
 
 class SinglyLinkedList:

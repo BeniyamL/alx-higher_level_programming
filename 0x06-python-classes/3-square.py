@@ -1,4 +1,7 @@
-##!/usr/bin/python3
+#!/usr/bin/python3
+""" square class definition """
+
+
 class Square:
     """ a square class to define atributes and methods of a square """
 
