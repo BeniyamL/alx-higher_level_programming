@@ -1,0 +1,89 @@
+========================
+doctest for 100-matrix_mul
+========================
+
+
+first import the module
+=======================
+    >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+
+How it works
+===================
+the function accepts two matrix and returns the multiplication of these matrix.if m_a or m_b is not a list: raise a TypeError exception with the message m_a must be a list or m_b must be a list if m_a or m_b is not a list of lists: raise a TypeError exception with the message m_a must be a list of lists or m_b must be a list of lists. To use the system, call the matrix_mul and provide two matrix as a parameter like
+    >>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+    [[7, 10], [15, 22]]
+
+Test case 0 (without parameter)
+===========
+    >>> print(matrix_mul())
+    Traceback (most recent call last):
+    TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+
+Test case 1 (with a single parameter)
+=====================================
+    >>> print(matrix_mul([[1, 2], [3, 4]]))
+    Traceback (most recent call last):
+    TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
+Test case 2 (with valid int parameter)
+================================================
+    >>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+    [[7, 10], [15, 22]]
+
+Test cases 3 (with valid float parameter)
+=====================================
+    >>> print(matrix_mul([[7.1, 8.2], [9.3, 6.4]], [[1.8, 2.6], [8.3, 4.6]]))
+    [[80.84, 56.17999999999999], [69.86000000000001, 53.620000000000005]]
+
+
+Test case 4 (two marix with different dimension but same no of rows and columns)
+=====================================
+    >>> print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+    [[13, 16]]
+
+
+Test case 5 (two matrix with different dimentsion but different no of rows & columns)
+========================================================================
+    >>> print(matrix_mul([[1, 2]], [[3, 4], [8, 14], [5, 6]]))
+    Traceback (most recent call last):
+    ValueError: m_a and m_b can't be multiplied
+
+Test case 6 (two matrix with negative value)
+=========================================
+    >>> print(matrix_mul([[-1, -2]], [[3, 4], [-5, -6]]))
+    [[7, 8]]
+
+Test Case 7 (with the second empty matrix)
+=======================================
+    >>> print(matrix_mul([[2, 3], [4, 5]], []))
+    Traceback (most recent call last):
+    ValueError: m_b can't be empty
+
+Test Case 8 (with the first empty matrix)
+======================================
+    >>> print(matrix_mul([],[[2, 3], [4, 5]]))
+    Traceback (most recent call last):
+    ValueError: m_a can't be empty
+
+Test case 9 (with non-list number)
+==========================================================
+    >>> print(matrix_mul([[1, 2], [3, 4]],2))
+    Traceback (most recent call last):
+    TypeError: m_b must be a list
+
+Test case 10 (making first matrix string type)
+====================================
+    >>> print(matrix_mul([['h', 'am'], [3, 4]], [[1, 2], [3, 4]]))
+    Traceback (most recent call last):
+    TypeError: m_a should contain only integers or floats
+
+Test case 11 (the first matrix with different row and colum size)
+====================================
+    >>> print(matrix_mul([[1, 2], [3, 4, 5]], [[1, 2], [3, 4]]))
+    Traceback (most recent call last):
+    TypeError: Each row of m_a must be of the same size
+
+
+
+
