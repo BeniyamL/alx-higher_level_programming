@@ -1,0 +1,56 @@
+========================
+doctest for 5-text_indentation
+========================
+
+
+first import the module
+=======================
+    >>> indent = __import__('5-text_indentation').text_indentation
+
+
+How it works
+===================
+the function accepts a given string and prints a text with 2 new lines after each of these characters . ? and :. text must be a string, otherwise raise a TypeError exception with the message text must be a string. There should be no space at the beginning or at the end of each printed line call the indent function witha text parameter like    
+    >>> indent("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+    ... Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere?""")
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+    Quonam modo?
+    <BLANKLINE>
+    Utrum igitur tibi litteram videor an totas paginas commovere?
+    <BLANKLINE>
+
+Test case 0 (without parameter)
+===========
+    >>> indent()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Test case 1 (with non string parameter)
+=====================================
+    >>> indent(2434)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Test cases 3 (with a valid parameter having ?)
+=====================================
+    >>> indent("Am I ALX student ? yeah I am")
+    Am I ALX student ?
+    <BLANKLINE>
+    yeah I am
+
+Test case 4 (with a vlaid parameter having combination of . ? and :)
+====================================================================
+    >>> indent("Am I ALX student ? yeah I am. I want more exerience in : c : python : Javascript")
+    Am I ALX student ?
+    <BLANKLINE>
+    yeah I am.
+    <BLANKLINE>
+    I want more exerience in :
+    <BLANKLINE>
+    c :
+    <BLANKLINE>
+    python :
+    <BLANKLINE>
+    Javascript
+

@@ -1,0 +1,58 @@
+========================
+doctest for 4-print_square
+========================
+
+
+first import the module
+=======================
+    >>> square = __import__('4-print_square').print_square
+
+
+How it works
+===================
+the function accepts one number sizee and prints a square with the character #.size must be an integer, otherwise raise a TypeError exception with the message size must be an integer. if size is less than 0, raise a ValueError exception with the message size must be >= 0. call the square function with size like    
+    >>> square = __import__('4-print_square').print_square
+    >>> square(4)
+    ####
+    ####
+    ####
+    ####
+
+Test case 0 (without parameter)
+===========
+    >>> square()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+Test case 1 (with a valid parameter)
+=====================================
+    >>> square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+Test cases 3 (with a string parameter)
+=====================================
+    >>> square("H")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+Test case 4 (with float data type)
+=============================================
+    >>> square(4.5)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+Test case 5 (with negative size)
+===============================================================
+    >>> square(-4)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+

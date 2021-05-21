@@ -1,0 +1,64 @@
+========================
+doctest for 0-add_integer
+========================
+
+
+first import the module
+=======================
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+
+How it works
+===================
+the function accepts two numbers a and b and returns their sum. the numbrs must be an integer or floats, otherwise it raises a TypeError. To use the function just call the above function and provide a and b as an argument like
+    >>> add_integer(1, 2)
+    3
+
+Test case 0 (without parameter)
+===========
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test case 1 (with a single parameter)
+=====================================
+    >>> add_integer(4)
+    102
+
+Test case 2 (with a single parameter float type)
+================================================
+    >>> add_integer(4.5)
+    102
+
+Test cases 3 (with two int parameter)
+=====================================
+    >>> add_integer(5, 10)
+    15
+
+Test case 4 (with two float parameter)
+=====================================
+    >>> add_integer(3.4, 10.7)
+    13
+
+Test case 5 (with two parameter, one int and second float type)
+===============================================================
+    >>> add_integer(4, 7.5)
+    11
+
+Test case 6 (with two negative parameter)
+=========================================
+    >>> add_integer(-3, -6)
+    -9
+
+Test Case 7 (with None parameter)
+=======================================
+    >>> add_integer(None, 6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test Case 8 (with a string parameter)
+======================================
+    >>> add_integer(4, 'hey')
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
