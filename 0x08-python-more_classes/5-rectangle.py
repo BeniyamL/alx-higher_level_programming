@@ -110,8 +110,7 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
-        symb = str(self.print_symbol)
-        rectangle = (symb * self.__width + "\n") * self.__height
+        rectangle = ("#" * self.__width + "\n") * self.__height
         rectangle = rectangle[:-1]
         return (rectangle)
 
