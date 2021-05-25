@@ -31,7 +31,7 @@ def matrix_mul(m_a, m_b):
                for num in [ele for row in m_b for ele in row]):
         raise TypeError("m_b should contain only integers or floats")
     checkRowSize(m_a, "m_a")
-    checkRowSize(m_a, "m_a")
+    checkRowSize(m_b, "m_b")
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
@@ -60,5 +60,5 @@ def checkRowSize(matrix, which):
     size = len(matrix[0])
     for row in matrix:
         if size != len(row):
-            raise TypeError("Each row of " + which +
+            raise TypeError("each row of " + which +
                             " must be of the same size")
