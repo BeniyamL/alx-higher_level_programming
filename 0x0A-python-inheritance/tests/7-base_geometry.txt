@@ -1,0 +1,82 @@
+========================
+doctest for 7-base_geometry.txt
+========================
+
+
+first import the module
+=======================
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+How it works
+===================
+the function accepts a name and a value and checks whether the value is valied. To use the function,create an object and provide the arguments like
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("name", "John")
+    Traceback (most recent call last):
+    TypeError: name must be an integer
+
+Test case 0 (empty argument)
+===========
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Test case 1 (with one argument)
+=====================================
+    >>> bg.integer_validator("my_int")
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Test case 2 (with valid argument)
+================================================
+    >>> bg.integer_validator("my_int", 13)
+
+
+Test cases 3 (with float argument)
+=====================================
+    >>> bg.integer_validator("my_int", 13.6)
+    Traceback (most recent call last):
+    TypeError: my_int must be an integer
+
+Test case 4 (with string argument)
+=====================================
+    >>> bg.integer_validator("my_int", "john")
+    Traceback (most recent call last):
+    TypeError: my_int must be an integer
+
+Test case 5 (with negative value)
+===============================================================
+    >>> bg.integer_validator("distance", -4)
+    Traceback (most recent call last):
+    ValueError: distance must be greater than 0
+
+Test case 6 (calling area method)
+=========================================
+    >>> bg.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
+
+Test case 7 (with infinte float value)
+=============================
+    >>> bg.integer_validator("distance", 1e500)
+    Traceback (most recent call last):
+    TypeError: distance must be an integer
+
+test case 8 (with list argument)
+================================
+    >>> bg.integer_validator("distance", [1,2])
+    Traceback (most recent call last):
+    TypeError: distance must be an integer
+
+test case 9(with boolean type)
+================================
+    >>> bg.integer_validator("distance", True)
+    Traceback (most recent call last):
+    TypeError: distance must be an integer
+test case 10 (with 0 value)
+=============================
+    >>> bg.integer_validator("distance", 0)
+    Traceback (most recent call last):
+    ValueError: distance must be greater than 0
+
