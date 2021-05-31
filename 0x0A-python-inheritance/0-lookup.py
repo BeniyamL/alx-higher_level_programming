@@ -1,9 +1,4 @@
 #!usr/bin/python3
-"""
-function definition lookup
-"""
-
-
 def lookup(obj):
     """
     lookup - function to find lsit of availabel attributes and methods
