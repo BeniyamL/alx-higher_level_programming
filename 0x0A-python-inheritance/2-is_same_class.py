@@ -1,4 +1,8 @@
-#!usr/bin/python3
+#!/usr/bin/python3
+""" function definition for is_same_class"
+"""
+
+
 def is_same_class(obj, a_class):
     """
     is_same_class- check whether a class is an instance of the class
