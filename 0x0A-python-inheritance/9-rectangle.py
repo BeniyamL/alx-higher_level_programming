@@ -41,6 +41,6 @@ class Rectangle(BaseGeometry):
         Returns:
             the string representation of a rectangle
         """
-        rect_str = "[Rectangle] " 
+        rect_str = "[Rectangle] "
         rect_str += str(self.__width) + "/" + str(self.__height)
         return (rect_str)

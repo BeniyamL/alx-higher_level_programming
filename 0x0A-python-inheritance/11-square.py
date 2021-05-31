@@ -29,6 +29,6 @@ class Square(Rectangle):
         Returns:
             the string representation of a rectangle
         """
-        square_str = "[Square] " 
+        square_str = "[Square] "
         square_str += str(self.__size) + "/" + str(self.__size)
         return (square_str)
