@@ -11,7 +11,7 @@ def pascal_triangle(n):
         the passcal triangle
     """
     if n <= 0:
-        return triangle
+        return []
     triangle = [[1]]
     for i in range(n - 1):
         last_row = triangle[-1]
