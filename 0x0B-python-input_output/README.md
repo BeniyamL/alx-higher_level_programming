@@ -900,6 +900,3 @@ Repo:
     GitHub repository: alx-higher_level_programming
     Directory: 0x0B-python-input_output
     File: 101-stats.py
-
-Copyright © 2021 ALX. All rights reserved.
-
