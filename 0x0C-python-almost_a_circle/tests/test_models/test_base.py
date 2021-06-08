@@ -61,7 +61,7 @@ class TestBaseClassInstantiation(unittest.TestCase):
         self.assertEqual(b1.id, b2.id - 1)
 
     def test_2_object_instantiation_withEmptyAndArgument(self):
-        """ function to test the base classe when object is created using both empty and some argument 
+        """ when object is created using both empty and some argument
 
         Arguments:
             nothing
@@ -117,7 +117,7 @@ class TestBaseClassInstantiation(unittest.TestCase):
         self.assertEqual(b1.id, [1, 2])
 
     def test_object_instantiation_WithDictArgument(self):
-        """ function to test the base classe when object created passing dictionary argument
+        """when object created passing dictionary argument
         Arguments:
             nothing
         Returns:
@@ -147,25 +147,24 @@ class TestBaseClassInstantiation(unittest.TestCase):
             b1 = Base(1, 2)
 
     def test_object_instantiation_WithPrivateAttribute(self):
-         """ function to test the base classe when object created using private attribute
+        """ when object created using private attribute
 
-         Arguments:
-             nothing
-         Returns:
-             nothing
-         """
-         b1 = Base()
-         with self.assertRaises(AttributeError):
-             print(b1.__nb_objects)
+        Arguments:
+            nothing
+        Returns:
+            nothing
+        """
+        b1 = Base()
+        with self.assertRaises(AttributeError):
+            print(b1.__nb_objects)
 
 
 class TestToJsonConvertion(unittest.TestCase):
     """ class definition for test Base class to json conversion"""
 
-
     def test_to_json_withEmptyArgument(self):
         """ function to test to_json method with empty argument """
-        
+
         with self.assertRaises(TypeError):
             Base.to_json_string()
 
@@ -223,7 +222,5 @@ class TestToJsonConvertion(unittest.TestCase):
 
         self.assertEqual("[]", Base.to_json_string([]))
 
-
-        
 if __name__ == '__main__':
     unittest.main()
