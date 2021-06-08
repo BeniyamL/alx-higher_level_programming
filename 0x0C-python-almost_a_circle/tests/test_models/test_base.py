@@ -3,6 +3,8 @@
 
 import unittest
 from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
 
 class TestBaseClassInstantiation(unittest.TestCase):
@@ -186,12 +188,12 @@ class TestToJsonConvertion(unittest.TestCase):
         """ function to test to_json method with square type """
 
         s1 = Square(4, 3, 4, 5)
-        self.assertEqual(str, type(Base.to_json_string(s1.to_dictionary())
+        self.assertEqual(str, type(Base.to_json_string(s1.to_dictionary())))
 
     def test_to_json_withMorthanOneArgument(self):
         """ function to test to_json method with more than one argument """
 
-         r1 = Rectangle(10, 4)
+        r1 = Rectangle(10, 4)
         with self.assertRaises(TypeError):
             Base.to_json_string(r1, 2)
 
