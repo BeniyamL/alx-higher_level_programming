@@ -207,11 +207,10 @@ This project covers how to build basic block of big python project like AirBnB p
     File: models/base.py
 
 ---
-
 ## Available methods
 
 / method name / Description /
----         / ---         /
+---           / ---         /
 def __init__(self, id=None) / constructor for Base, rectangle and square class
 def to_json_string(list_dictionaries) / convert to JSON string representation
 def save_to_file(cls, list_objs)  / write the json string to a file
@@ -234,7 +233,7 @@ def __str__(self) / string representation of a rectangle and square class
 def update(self, *args, **kwargs) / update attributes of a rectangle and square
 def to_dictionary(self)  / dictionary represenation of a rectangle and square class
 def size(self) / getter function for the size of the square
-def size(self, size) / setter function for the size of the square
+def size(self, size) | setter function for the size of the square
 ---
 
 ## Examples
@@ -290,7 +289,7 @@ guillaume@ubuntu:~/$ ./4-main.py
 ========
 ##
 ##
-
+```
 ---
 
 ``` __str ```
