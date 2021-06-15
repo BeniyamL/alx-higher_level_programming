@@ -49,6 +49,7 @@ This project covers how to build basic block of big python project like AirBnB p
 ## Tasks
 
    * 0. make All your files, classes and methods must be unit tested and be PEP 8 validated.
+
     Repo:
 
     GitHub repository: alx-higher_level_programming
@@ -56,6 +57,7 @@ This project covers how to build basic block of big python project like AirBnB p
     File: tests/
 
    * 1. Write the first class Base
+
    Repo:
 
     GitHub repository: alx-higher_level_programming
@@ -63,6 +65,7 @@ This project covers how to build basic block of big python project like AirBnB p
     File: models/base.py, models/__init__.py
 
    * 2.Write the class Rectangle that inherits from Base:
+   
    Repo:
 
     GitHub repository: alx-higher_level_programming
@@ -77,13 +80,14 @@ This project covers how to build basic block of big python project like AirBnB p
     File: models/rectangle.py
 
    * 4. Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
+    
     Repo:
 
     GitHub repository: alx-higher_level_programming
     Directory: 0x0C-python-almost_a_circle
     File: models/rectangle.py
 
-   * 5.Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.
+   * 5.Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character 
     Repo:
 
     GitHub repository: alx-higher_level_programming
@@ -91,36 +95,122 @@ This project covers how to build basic block of big python project like AirBnB p
     File: models/rectangle.py
 
    * 6. Update the class Rectangle by overriding the __str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+    
     Repo:
 
     GitHub repository: alx-higher_level_programming
     Directory: 0x0C-python-almost_a_circle
     File: models/rectangle.py
 
-   * 7. Update the class Rectangle by improving the public method def display(self): to print in stdout the Rectangle instance with the character # by taking care of x and y
-   * 8. Update the class Rectangle by adding the public method def update(self, *args): that assigns an argument to each attribute:
-   * 9. Update the class Rectangle by updating the public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:
-   * 10.Write the class Square that inherits from Rectangle:
+   * 7. Update the class Rectangle by improving the public method def display(self): to print in stdout the Rectangle instance with the character  by taking care of x and y
+
    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/rectangle.py
+
+   * 8. Update the class Rectangle by adding the public method def update(self, *args): that assigns an argument to each attribute:
+
+   Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/rectangle.py
+
+   * 9. Update the class Rectangle by updating the public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:
+
+   Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/rectangle.py
+
+   * 10.Write the class Square that inherits from Rectangle:
+   
+    Repo:
 
     GitHub repository: alx-higher_level_programming
     Directory: 0x0C-python-almost_a_circle
     File: models/square.py
 
    * 11. Update the class Square by adding the public getter and setter size
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/square.py
+
    * 12. Update the class Square by adding the public method def update(self, *args, **kwargs) that assigns attributes:
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/square.py
+
    * 13. Rectangle instance to dictionary representation
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/rectangle.py
+
    * 14. Update class Square by adding the public method def to_dictionary(self): that returns the dictionary representation of a Square:This dictionary must contain id, size, x, y
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/square.py
+
    * 15. Update the class Base by adding the static method def to_json_string(list_dictionaries): that returns the JSON string representation of list_dictionaries:
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/base.py
+
    * 16. Update the class Base by adding the class method def save_to_file(cls, list_objs): that writes the JSON string representation of list_objs to a file:
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/base.py
+
    * 17.Update the class Base by adding the static method def from_json_string(json_string): that returns the list of the JSON string representation json_string:
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/base.py
+
    * 18.Update the class Base by adding the class method def create(cls, **dictionary): that returns an instance with all attributes already set:
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/base.py
+
    * 19. Update the class Base by adding the class method def load_from_file(cls): that returns a list of instances:
+
+    Repo:
+
+    GitHub repository: alx-higher_level_programming
+    Directory: 0x0C-python-almost_a_circle
+    File: models/base.py
+
 ---
 
 ## Available methods
 
-/method name / Description /
+/ method name / Description /
 ---         / ---         /
 def __init__(self, id=None) / constructor for Base, rectangle and square class
 def to_json_string(list_dictionaries) / convert to JSON string representation
@@ -144,9 +234,7 @@ def __str__(self) / string representation of a rectangle and square class
 def update(self, *args, **kwargs) / update attributes of a rectangle and square
 def to_dictionary(self)  / dictionary represenation of a rectangle and square class
 def size(self) / getter function for the size of the square
- def size(self, size) / setter function for the size of the square
-
-
+def size(self, size) / setter function for the size of the square
 ---
 
 ## Examples
@@ -187,7 +275,7 @@ if __name__ == "__main__":
     r1 = Rectangle(4, 6)
     r1.display()
 
-    print("---")
+    print("========")
 
     r1 = Rectangle(2, 2)
     r1.display()
@@ -199,7 +287,7 @@ guillaume@ubuntu:~/$ ./4-main.py
 ####
 ####
 ####
----
+========
 ##
 ##
 
@@ -224,7 +312,7 @@ beniyaml@ubuntu:~/$ ./5-main.py
 [Rectangle] (12) 2/1 - 4/6
 [Rectangle] (1) 1/0 - 5/5
 beniyaml@ubuntu:~/$ 
-
+```
 ----
 
 
