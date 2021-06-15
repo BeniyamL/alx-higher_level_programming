@@ -205,34 +205,33 @@ This project covers how to build basic block of big python project like AirBnB p
     GitHub repository: alx-higher_level_programming
     Directory: 0x0C-python-almost_a_circle
     File: models/base.py
-
 ---
 ## Available methods
 
-/ method name / Description /
----           / ---         /
-def __init__(self, id=None) / constructor for Base, rectangle and square class
-def to_json_string(list_dictionaries) / convert to JSON string representation
-def save_to_file(cls, list_objs)  / write the json string to a file
-def from_json_string(json_string) / convert json string to python object
-def create(cls, **dictionary)  / returns an instance with all attributes
-def load_from_file(cls) / returns a lsit of instances
-def save_to_file_csv(cls, list_objs) / save to csv format
-def load_from_file_csv(cls) / function to load csv files
-def width(self)   / getter function of width of the rectangle
-def width(self, width) / setter function for the width of the rectangle
-def height(self)  / getter function for the height of the rectangle
-def height(self, height)  / setter function for the height of the rectangle
-def x(self)  / getter fucntion for the x coordinate of the rectangle
-def x(self, x)   / setter function for the x coordinate of the reactangle
-def y(self)  / getter function for the y coordinate of the rectangle
-def y(self, y) / setter function for the y coordinate of the rectangle
-def area(self) / find the area of the rectangle
-def display(self) / display the rectangle
-def __str__(self) / string representation of a rectangle and square class
-def update(self, *args, **kwargs) / update attributes of a rectangle and square
-def to_dictionary(self)  / dictionary represenation of a rectangle and square class
-def size(self) / getter function for the size of the square
+| method name | Description |
+---           | ---         |
+def __init__(self, id=None) | constructor for Base, rectangle and square class
+def to_json_string(list_dictionaries) | convert to JSON string representation
+def save_to_file(cls, list_objs)  | write the json string to a file
+def from_json_string(json_string) | convert json string to python object
+def create(cls, **dictionary)  | returns an instance with all attributes
+def load_from_file(cls) | returns a lsit of instances
+def save_to_file_csv(cls, list_objs) | save to csv format
+def load_from_file_csv(cls) | function to load csv files
+def width(self)   | getter function of width of the rectangle
+def width(self, width) | setter function for the width of the rectangle
+def height(self)  | getter function for the height of the rectangle
+def height(self, height)  | setter function for the height of the rectangle
+def x(self)  | getter fucntion for the x coordinate of the rectangle
+def x(self, x)   | setter function for the x coordinate of the reactangle
+def y(self)  | getter function for the y coordinate of the rectangle
+def y(self, y) | setter function for the y coordinate of the rectangle
+def area(self) | find the area of the rectangle
+def display(self) | display the rectangle
+def __str__(self) | string representation of a rectangle and square class
+def update(self, *args, **kwargs) | update attributes of a rectangle and square
+def to_dictionary(self)  | dictionary represenation of a rectangle and square class
+def size(self) | getter function for the size of the square
 def size(self, size) | setter function for the size of the square
 ---
 
