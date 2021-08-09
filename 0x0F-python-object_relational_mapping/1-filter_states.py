@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     cur = conn.cursor()
     cur.execute("SELECT * FROM states\
-                WHERE name like 'N%' ORDER BY id ASC")
+                WHERE name like BINARY 'N%' ORDER BY id ASC")
     rows = cur.fetchall()
     for row in rows:
         print(row)
